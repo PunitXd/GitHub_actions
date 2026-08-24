@@ -1,0 +1,14 @@
+name: event filter and activity types
+on:
+  workflow_dispatch:
+  # pull_request:
+  #   types: [opened, reopened]
+  #   branches:
+  #     - master
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: echo "Running whenever a PR is opened AND the base branch is main"
